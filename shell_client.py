@@ -9,10 +9,12 @@ to the Apache server. The shell.php file can be renamed or better yet nested
 inside of already existing HTML code for further obfuscation.
 
 Usage:
-    1. Run the script using "python3 shell_client.py"
-    2. Enter just the IP address/URL of the server (Do not include prefixes or suffixes)
-    3. Press enter for HTTP, or enter 1 if the server is running HTTPS.
-    4. You can now enter commands as if you were logged in as the Apache user! Try
+    1. Install "shell.php" on to the target web server within the /var/www/html directory (you will need to find an
+    exploit or be given access to the server to get this file there).
+    2. Run the script using "python3 shell_client.py"
+    3. Enter just the IP address/URL of the target server (Do not include prefixes or suffixes).
+    4. Press enter for HTTP, or enter 1 if the server is running HTTPS.
+    5. You can now enter commands as if you were logged in as the Apache user! Try
     commands such as "whoami" or "cat /etc/passwd".
 """
 
