@@ -4,9 +4,18 @@ Basic PHP Webshell for Red Team use. The shell.php file must be placed on the ta
 For Example:
   127.0.0.1
   
-By default the script will append the correct URI to the address to establish the connection. You are then free to issue commands to the server as if you were locally on the system.
+By default the script will append the correct URL to the address to establish the connection. You are then free to issue commands to the server as if you were locally on the system.
 
-Note that this PHP script utilizes authentication. This means that in order to execute commands you have to input the correct password. The password is stored in plaintext on the client-side Python script and is stored as an MD5 hash on the server-side PHP script.
+# Installation
+    1. Simply download the GitHub repo to your PC, unzip the "php-webshell-master.zip" file
+    and navigate to the "php-webshell-master" directory.
+    2. From here, locate "shell.php" and "shell_client.py", "shell.php needs to be placed
+    on the target machine (see more in Usage Instructions).
+    3. You may need to install requests and Beautiful Soup for the "shell_client.py"
+    file to run correctly. Try:
+      pip3 install requests
+      pip3 install beautifulsoup
+    4. Success!
 
 # Usage Instructions
     1. Install "shell.php" on to the target web server within the /var/www/html directory (you will need to find an
